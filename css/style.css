@@ -1,0 +1,345 @@
+body {
+	font-family: 'Prompt', sans-serif;
+	background-color: #F2ECEC;
+	margin: 0 30px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	border-radius: 0 0 30px 30px;
+	box-shadow: 0 0 9px 0px rgb(76 219 212);
+	position: fixed;
+	width: 99%;
+	margin: -20px -20px;
+	transition: 0.26s;
+}
+ul li {
+	display: inline-block;
+	margin-right: 34px;
+	margin-top: 10px;
+	
+}
+ul li a {
+	color: #000000;
+	list-style: none;
+	font-size: 16px;
+	text-decoration: none;
+
+}
+ul li a:hover {
+	color: #584EFF;
+	list-style: none;
+	font-size: 16px;
+	text-decoration: none;
+
+}
+p {
+	text-decoration-color: none;
+}
+.logo {
+	width: 320px;
+	filter: hue-rotate(90deg);
+}
+.search-bar {
+	width: 290px;
+	height: 30px;
+	border-radius: 17px;
+	border-color: transparent;
+	box-shadow: 0 0 9px 0px rgb(76 219 212);
+	margin-top: 60px;
+	transition: 0.21s;
+}
+.search-bar:hover {
+	width: 370px;
+	height: 30px;
+	border-radius: 17px;
+	border-color: transparent;
+	box-shadow: 0 0 9px 6px rgb(76 219 212);
+}
+#content {
+	width: 80%;
+	height: auto;
+	border-radius: 30px;
+	background: #9ee1d7;
+	margin-top: 50px;
+}
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 30px;
+}
+.btns-content {
+	width: 200px;
+}
+.btns-content:hover {
+	filter: brightness(90%);
+}
+.folders {
+	color: #000000;
+	font-size: 40px;
+}
+.lessonbutton {
+	width: 790px;
+	font-size: 30px;
+	margin-bottom: 30px;
+	height: 70px;
+	color: #fff;
+	border-radius: 30px;
+	border-color: transparent;
+	text-align: left;
+	background: #3e7575;
+	transition: 0.25s;
+}
+.lessonbutton:hover {
+	width: 800px;
+	height: 72px;
+	font-size: 32px;
+}
+summary {
+	font-size: 20px;
+	outline: none;
+  /* Hides marker on Chrome */
+  list-style: none;
+  cursor: pointer;
+}
+.intro {
+	 margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+}
+#quiz-content {
+	background: transparent;
+	width: auto;
+	height: auto;
+	border-radius: 30px;
+}
+.questions {
+	margin-top: 50px;
+	margin-left: 30px;
+} 
+.theoptions {
+	background: transparent;
+	border-color: darkred;
+	border-radius: 30px;
+	width: 800px;
+	height: 40px;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: 60px;
+	text-align: left;
+}
+ #gifContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: none;
+}
+#gifContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#textOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  opacity: 0;
+}
+#bg-quiz {
+	background-image: url('../images/quiz-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+#questionside {
+	display: flex;
+	justify-content: space-between;
+}
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(5px);
+  
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: 7% auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 670px;
+  animation-name: modalopen;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 16px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+	filter: brightness(4.0);
+}
+
+@keyframes modalopen {
+  from { transform: scale(0) }
+  to { transform: scale(1) }
+}
+.tt {
+	 width: 600px;
+}
+
+li {
+	cursor: pointer;
+}
+
+.pdf-button {
+			display: inline-block;
+			border: none;
+			padding: 0;
+			border-radius: 0;
+			text-align: left;
+			box-shadow: none;
+			background-color: transparent;
+			color: #1A73E8;
+			font-size: 14px;
+			font-weight: 400;
+			text-decoration: none;
+			cursor: pointer;
+		}
+
+		.pdf-button:hover {
+			color: #0D47A1;
+			text-decoration: underline;
+		}
+
+		.pdf-button img {
+			display: block;
+			margin: 0 auto;
+			width: 64px;
+			height: 64px;
+			margin-bottom: 4px;
+		}
+
+		.pdf-button span {
+			display: block;
+			font-size: 12px;
+			font-weight: 400;
+			margin-top: 2px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			max-width: 120px;
+		}
+
+		.pdf-button .icon {
+			display: inline-block;
+			margin-right: 8px;
+			vertical-align: middle;
+			width: 24px;
+			height: 24px;
+			background-image: url('https://www.gstatic.com/classroom/assistant/pdf_icon.svg');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 24px 24px;
+		}
+
+
+.thumbnail {
+	width: 80px;
+	margin: 2px 0 0 20px;
+	transition: 0.25s;
+}
+.thumbnail:hover {
+	width: 85px;
+	margin: 2px 0 0 20px;
+}
+.thumbnail1 {
+	width: 66px;
+	margin: 2px 0 0 20px;
+	transition: 0.25s;
+}
+.thumbnail1:hover {
+	width: 68px;
+	margin: 2px 0 0 20px;
+}
+#centered-div {
+        display: flex;
+        justify-content: center;
+    }
+.intro {
+	margin: 0;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 150px;
+ transform: translate(-50%, -50%);
+}
+.fade-in-image { animation: fadeIn 3s; }
+ 
+@keyframes fadeIn {
+ 0% { opacity: 0; }
+ 100% { opacity: 1;}
+}
+iframe {
+	width: 100%;
+	height: 800px;
+	margin-top: 100px;
+}
+.classsec {
+	color: #cd606c;
+}
+.qptext {
+	font-size: 40px;
+	text-align: center;
+}
+#pdfbtn {
+	display: flex;
+	box-shadow: 0 0 9px 0px rgb(76 219 212);
+	width: 400px;
+	font-size: 15px;
+	border-radius: 30px;
+	margin-right: 30px;
+	transition: 0.25s;
+}
+#pdfbtn:hover {
+	display: flex;
+	box-shadow: 0 0 9px 0px rgb(76 219 212);
+	width: 410px;
+	font-size: 16px;
+	border-radius: 30px;
+}
+.pdftext {
+	margin-left: 10px;
+	transition: 0.1s;
+	text-decoration-style: none;
+}
+.pdftext:hover {
+	color: #8b8b8b;
+}
+#pdf-content {
+	display: flex;
+}

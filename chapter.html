@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<header>
+		<a href="home.html"><img src="images/logo.png" alt="Arava" class="logo"></a>
+		
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a class="text" onclick="openModal()">My Timetable</a></li>
+				<li><a id="myText">--</a></li>
+			</ul>
+		</nav>
+	</header>
+<div id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="images/timetable.jpeg" alt="Image" class="tt">
+  </div>
+</div>
+	<p>../<a href="home.html">home</a>/chapters</p>
+
+	<section>
+		<center>
+			<form action="https://www.google.com/search" target="_blank">
+				<label for="query">Search:</label>
+				<input type="text" id="query" name="q" class="search-bar" placeholder="Search Google">
+				<input type="submit" value="Search">
+			</form>
+		</center>
+	</section>
+<script type="text/javascript">
+	 // Set the times to play the music
+  const playTimes = ["07:50:00", "09:15:00", "12:00:00", "12:30:00"];
+
+  function playMusic() {
+    const now = new Date();
+    const currentTime = now.toLocaleTimeString("en-US", { hour12: false });
+    
+    // Check if the current time matches one of the play times
+    if (playTimes.includes(currentTime)) {
+      const bgMusic = document.getElementById("bg-music");
+      bgMusic.play();
+    }
+  }
+  
+  // Call the playMusic function every second
+  setInterval(playMusic, 1000);
+</script>
+	<center>
+		<section id="content">
+			<h1 class="folders">Textbook PDFs:</h1><hr>
+			<details>
+				<summary>History:</summary>
+				<p>
+					<div class="buttons-chapters">
+						<a href="https://ncert.nic.in/textbook/pdf/jess301.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 1: The Rise of Nationalism in Europe</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess302.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 2: Nationalism in India</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess303.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 3: The Making of a Global World</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess304.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 4: The Age of Industrialisation</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess305.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 5: Print Culture and the Modern World</button>
+						</a><br>
+					</div>
+				</p>
+			</details><br>
+
+			<details>
+				<summary>Geography:</summary>
+				<p>
+					<div class="buttons-chapters">
+						<a href="https://ncert.nic.in/textbook/pdf/jess101.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 1 Resources and Development</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess102.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 2 Forest and Wildlife Resources</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess103.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 3 Water Resources</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess104.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 4 Agriculture</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess105.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 5 Minerals and Energy Resources</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess106.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 6 Manufacturing Industries</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess107.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 7 Lifelines of National Economy</button>
+						</a><br>
+					</div>
+				</p>
+			</details><br>
+
+			<details>
+				<summary>Political Science:</summary>
+				<p>
+					<div class="buttons-chapters">
+						<a href="https://ncert.nic.in/textbook/pdf/jess401.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 1 Power-sharing</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess402.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 2: Federalism</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess03.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 3: Democracy and Diversity</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess404.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 4: Gender, Religion and Caste</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess405.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 5: Popular Struggles and Movements</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess406.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 6: Political Parties</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess407.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 7: Outcomes of Democracy</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess408.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 8: Challenges to Democracy</button>
+						</a><br>
+					</div>
+				</p>
+			</details><br>
+
+				<details>
+				<summary>Economics:</summary>
+				<p>
+					<div class="buttons-chapters">
+						<a href="https://ncert.nic.in/textbook/pdf/jess201.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 1: Development</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess202.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 2: Sectors of the Indian Economy</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess203.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 3: Money and Credit</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess204.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 4: Globalisation and the Indian Economy</button>
+						</a><br>
+						<a href="https://ncert.nic.in/textbook/pdf/jess205.pdf" target="_blank">
+							<button class="lessonbutton">Chapter 5: Consumer Rights</button>
+						</a><br>
+					</div>
+				</p>
+			</details><br>
+
+		</section>
+	</center>
+
+
+
+
+<audio id="bg-music" loop>
+  <source src="bell.mp3" type="audio/mp3">
+</audio>
+
+
+</body>
+<script type="text/javascript" src="js/timetablepop.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+	<meta http-equiv="refresh" content="4;home.html" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<title>SIS SOCIAL SCIENCE HUB | arava</title>
+</head>
+<body>
+	<div class="fade-in-image">
+		<img src="images/logo.png" class="intro" style="width: 500px">
+		<center>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1>By Aravind Shiju - 11F</h1>
+		</center>
+	</div>
+  
+ 
+
+<audio id="bg-music">
+  <source src="bell.mp3" type="audio/mp3">
+</audio>
+
+
+</body>
+<script src="js/bell/classdisplay.js"></script>
+<script type="text/javascript">
+	 // Set the times to play the music
+  const playTimes = ["07:55:00", "08:35:00", "9:25:00", "10:00:00", "10:35:00", "11:10:00", "11:45:00", "12:20:00", "22:35:00"];
+
+  function playMusic() {
+    const now = new Date();
+    const currentTime = now.toLocaleTimeString("en-US", { hour12: false });
+    
+    // Check if the current time matches one of the play times
+    if (playTimes.includes(currentTime)) {
+      const bgMusic = document.getElementById("bg-music");
+      bgMusic.play();
+    }
+  }
+  
+  // Call the playMusic function every second
+  setInterval(playMusic, 1000);
+</script>
+<script type="text/javascript" src="js/timetablepop.js"></script>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../../css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js"></script>
+	<title>Quiz | Chapter 1</title>
+</head>
+<body id="bg-quiz">
+	<header>
+		<a href="#"><img src="../../../images/logo.png" alt="Arava" class="logo"></a>
+		<nav>
+			<ul>
+				<li><a href="#"><b>Home</b></a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">My Timetable</a></li>
+				<li><a id="myText">Hello</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	
+	   		<h4>..Quiz/History/Chapter 2: Nationalism in India</h4>
+
+	<center>
+		<section id="quiz-content">
+			<h1 class="questions">2. Who set up the ‘Oudh Kisan Sabha’?</h1>
+
+			<button class="theoptions" id="myButton">(a) Alluri Sitaram Raju</button>
+			<br>
+			<button class="theoptions" id="my-button" onclick="handleButtonClick()">(b) Jawahar Lai Nehru and Baba Ramchandra</button>
+			<br>
+			<button class="theoptions" id="button3">(c) Jawaharlal Nehru and Shaukat Ali</button>
+			<br>
+			<button class="theoptions"  id="button2">(d) Mahatma Gandhi</button>
+			<br><br><br>
+		</section>
+	</center>
+
+<div id="pageContent">
+</div>
+  
+ 
+
+
+<div id="gifContainer">
+  <img src="../../../images/1.gif" alt="Your Gif">
+  <div id="textOverlay">
+  </div>
+</div>
+	<!--AUDIOS-->
+			<audio id="bg-music" loop>
+			  <source src="../../../bell.mp3" type="audio/mp3">
+			</audio>
+			<audio id="my-audio" src="../../../correct.mp3"></audio>
+			<audio id="music1" src="../../../wrong.mp3"></audio>
+			<audio id="music2" src="../../../guidinglights.mp3"></audio>
+	<!--AUDIOS-->
+</body>
+<script src="js/bell/ring.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+<script type="text/javascript">
+	  const myButton = document.getElementById('myButton');
+	  const button2 = document.getElementById('button2');
+	  const button3 = document.getElementById('button3');
+		const pageContent = document.getElementById('pageContent');
+		const gifContainer = document.getElementById('gifContainer');
+		const textOverlay = document.getElementById('textOverlay');
+		const music1 = document.getElementById('music1');
+		const music2 = document.getElementById('music2');
+
+myButton.addEventListener('click', () => {
+  music1.play();
+
+  setTimeout(() => {
+    pageContent.style.display = 'none';
+    gifContainer.style.display = 'block';
+    music2.play();
+  }, 2000);
+
+  setTimeout(() => {
+    textOverlay.textContent = '(b) Jawahar Lai Nehru and Baba Ramchandra	';
+    textOverlay.style.opacity = 1;
+  }, 10000);
+
+  setTimeout(() => {
+    textOverlay.style.opacity = 0;
+  }, 14500);
+
+  music2.addEventListener('ended', () => {
+    window.location.href = '2.html';
+  });
+});
+
+button2.addEventListener('click', () => {
+  music1.play();
+
+  setTimeout(() => {
+    pageContent.style.display = 'none';
+    gifContainer.style.display = 'block';
+    music2.play();
+  }, 2000);
+
+  setTimeout(() => {
+    textOverlay.textContent = '(b) Jawahar Lai Nehru and Baba Ramchandra';
+    textOverlay.style.opacity = 1;
+  }, 10000);
+
+  setTimeout(() => {
+    textOverlay.style.opacity = 0;
+  }, 14500);
+
+  music2.addEventListener('ended', () => {
+    window.location.href = '2.html';
+  });
+});
+
+button3.addEventListener('click', () => {
+  music1.play();
+
+  setTimeout(() => {
+    pageContent.style.display = 'none';
+    gifContainer.style.display = 'block';
+    music2.play();
+  }, 2000);
+
+  setTimeout(() => {
+    textOverlay.textContent = '(b) Jawahar Lai Nehru and Baba Ramchandra	';
+    textOverlay.style.opacity = 1;
+  }, 10000);
+
+  setTimeout(() => {
+    textOverlay.style.opacity = 0;
+  }, 14500);
+
+  music2.addEventListener('ended', () => {
+    window.location.href = '2.html';
+  });
+});
+</script>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+  $( ".theoptions" ).click(function() {
+    $( ".theoptions" ).css('background', 'red');
+  });
+});
+</script>
+<script type="text/javascript">
+	function handleButtonClick() {
+  // Change the button color to green
+  document.getElementById("my-button").style.backgroundColor = "green";
+
+  // Play the audio
+  var audio = document.getElementById("my-audio");
+  audio.play();
+
+  // When the audio finishes playing, redirect the page
+  audio.onended = function() {
+    window.location.href = "2.html";
+  };
+}
+</script>
+<script type="text/javascript">
+  const myButton = document.getElementById('myButton');
+const pageContent = document.getElementById('pageContent');
+const gifContainer = document.getElementById('gifContainer');
+const textOverlay = document.getElementById('textOverlay');
+const music1 = document.getElementById('music1');
+const music2 = document.getElementById('music2');
+
+myButton.addEventListener('click', () => {
+  music1.play();
+
+  setTimeout(() => {
+    pageContent.style.display = 'none';
+    gifContainer.style.display = 'block';
+    music2.play();
+  }, 2000);
+
+  setTimeout(() => {
+    textOverlay.textContent = '(c) Formulated codes for the army.	';
+    textOverlay.style.opacity = 1;
+  }, 10000);
+
+  setTimeout(() => {
+    textOverlay.style.opacity = 0;
+  }, 14500);
+
+  music2.addEventListener('ended', () => {
+    window.location.href = '2.html';
+  });
+});
+
+</script>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+  $( ".theoptions" ).click(function() {
+    $( ".theoptions" ).css('background', 'red');
+  });
+});
+</script>
+
+<!--When answer is correct-->
+<script type="text/javascript">
+	function handleButtonClick() {
+  // Change the button color to green
+  document.getElementById("my-button").style.backgroundColor = "green";
+
+  // Play the audio
+  var audio = document.getElementById("my-audio");
+  audio.play();
+
+  // When the audio finishes playing, redirect the page
+  audio.onended = function() {
+    window.location.href = "3.html";
+  };
+}
+</script>
+</html>
